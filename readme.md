@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="shots/logo.png" alt="kleur" height="120" />
+  <img src="shots/logo.png" alt="terminalcolor" height="120" />
 </div>
 
 <div align="center">
