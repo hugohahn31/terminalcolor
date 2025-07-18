@@ -1,20 +1,11 @@
-<div align="center">
-  <img src="shots/logo.png" alt="terminalcolor" height="120" />
+<div>
+  <div align="left">
+    The fastest Node.js library for formatting terminal text with ANSI colors~!
+  </div>
+  <div align="right">
+    <img src="shots/logo.png" alt="terminalcolor" height="120" />
+  </div>
 </div>
-
-<div align="center">
-  <a href="https://npmjs.org/package/terminalcolor">
-    <img src="https://badgen.now.sh/npm/v/terminalcolor" alt="version" />
-  </a>
-  <a href="https://npmjs.org/package/terminalcolor">
-    <img src="https://badgen.now.sh/npm/dm/terminalcolor" alt="downloads" />
-  </a>
-  <a href="https://packagephobia.now.sh/result?p=terminalcolor">
-    <img src="https://packagephobia.now.sh/badge?p=terminalcolor" alt="install size" />
-  </a>
-</div>
-
-<div align="center">The fastest Node.js library for formatting terminal text with ANSI colors~!</div>
 
 ## Features
 
