@@ -207,4 +207,4 @@ If you prefer the old syntax, you may migrate to `ansi-colors` or newer `chalk` 
 
 ## License
 
-terminalcolor is licensed under the terms of the MIT License. See the [LICENSE](LICENSE) file for details.
+terminalcolor is licensed under the terms of the MIT License. See the [license](license) file for details.
