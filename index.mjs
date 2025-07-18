@@ -1,6 +1,5 @@
 'use strict';
-
-let FORCE_COLOR, NODE_DISABLE_COLORS, NO_COLOR, TERM, isTTY=true;
+let FORCE_COLOR, NODE_DISABLE_COLORS, NO_COLOR, TERM, isTTY = true;
 if (typeof process !== 'undefined') {
 	({ FORCE_COLOR, NODE_DISABLE_COLORS, NO_COLOR, TERM } = process.env || {});
 	isTTY = process.stdout && process.stdout.isTTY;
@@ -45,7 +44,7 @@ const $ = {
 };
 
 function run(arr, str) {
-	let i=0, tmp, beg='', end='';
+	let i = 0, tmp, beg = '', end = '';
 	for (; i < arr.length; i++) {
 		tmp = arr[i];
 		beg += tmp.open;
@@ -98,12 +97,13 @@ function init(open, close) {
 		close: `\x1b[${close}m`,
 		rgx: new RegExp(`\\x1b\\[${close}m`, 'g')
 	};
+
 	return function (txt) {
 		if (this !== void 0 && this.has !== void 0) {
-			!!~this.has.indexOf(open) || (this.has.push(open),this.keys.push(blk));
-			return txt === void 0 ? this : $.enabled ? run(this.keys, txt+'') : txt+'';
+			!!~this.has.indexOf(open) || (this.has.push(open), this.keys.push(blk));
+			return txt === void 0 ? this : $.enabled ? run(this.keys, txt + '') : txt + '';
 		}
-		return txt === void 0 ? chain([open], [blk]) : $.enabled ? run([blk], txt+'') : txt+'';
+		return txt === void 0 ? chain([open], [blk]) : $.enabled ? run([blk], txt + '') : txt + '';
 	};
 }
 
